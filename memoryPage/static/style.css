@@ -1,0 +1,138 @@
+* {
+  padding: 5;
+  margin: 5;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  /*background-color: grey;*/
+  background-image: url('img/palm.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*background-color: rgba(43, 43, 43, 0);*/
+    background-image: url('img/columbia.jpg');
+    border-radius: 30px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.game h3 {
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Old Standard TT', serif;
+    background: #404040;
+    font-size: 30px;
+    color:white;
+}
+
+.memory-game {
+  width: 600px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  margin-bottom: 10px;
+}
+
+.memory-card {
+  width: calc(25% - 20px);
+  height: calc(25% - 2px);
+  margin: 10px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.memory-card:active {
+  transform: scale(1);
+  transition: transform 1.2s;
+  cursor: cell;
+}
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.memory-card:hover {
+  border: 4px solid white;
+  cursor: cell;
+}
+
+@media (orientation: portrait){
+	.memory-card{
+		flex-basis: auto;
+		height: 16.66vh;
+	}
+}
+
+.red {
+    background-image: url('img/m-0.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.blue {
+    background-image: url('img/m-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.yellow {
+    background-image: url('img/m-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.green {
+    background-image: url('img/m-3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.lightgreen {
+    background-image: url('img/m-4.png');
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.violet {
+    background-image: url('img/m-5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hidden {
+    background-image: url('img/blue.png');
+}
+.score {
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  font-family: 'Old Standard TT', serif;
+  font-weight: bold;
+  font-size: 26px;
+  text-align: center;
+  line-height: 100%;
+  width: 100%;
+}
