@@ -15,7 +15,7 @@ Simple memory game based on:
 Requirements: Vanilla JS, CSS3 and HTML5.
 Photos from Unsplash and random Google search.
 
-[LIVE VERSION](https://montraw.pythonanywhere.com/)
+[LIVE VERSION](https://mtxwl.github.io/M3m06y_G-W3/memoryPage/)
 
 Please check screenshots below
 
