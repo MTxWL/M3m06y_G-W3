@@ -1,5 +1,7 @@
 # M3m06y_G-W3
 
+Developed: 03/2020
+
 # Basic-memory-game
 
 Basic memory game JS. Just simple and crisp project. 
